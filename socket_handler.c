@@ -22,8 +22,10 @@
   "HTTP/1.1 200 OK\r\n"
   "Content-Type: text/html; charset=UTF-8\r\n"
   "Connection: keep-alive\r\n"
-  "Content-Length: 0\r\n"
+  "Content-Length: 124\r\n"
   "%s" /* optional CORS */
+  "\r\n"
+  "<!DOCTYPE html><html><head><script>window.location.replace(`http://${window.location.hostname}`);</script></head></html>\r\n"
   "\r\n";
 
   // HTTP 204 No Content for Google generate_204 URLs
