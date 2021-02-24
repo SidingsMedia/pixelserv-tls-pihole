@@ -7,6 +7,8 @@ _pixelserv-tls_  supports TLSv1.0, TLSv1.2 and TLSv1.3 and thus could operate wi
 
 pixelserv-tls can log access and HTTP/1.1 POST contents to syslog. So it  is  also  a  useful  tool  to  inspect and expose 'wrongly blocked' domains as well as 'rogue' domains invading user privacy.
 
+This fork of pixelserv-tls redirects all HTTPS traffic to HTTP which means that the Pi-Hole blocking page can be used instead of a blank screen.
+
 ## Build from source
 
 This works on all Linux distributions and Linux-like environments such Homebrew for macOS and Cygwin for Windows.
@@ -16,7 +18,7 @@ autoreconf -i
 ./configure
 make install
 ````
-
+<!--
 ## Install on Entware
 
 Binary packages are distributed by Entware. Beta version binaries during development are distributed from this GitHub repository.
@@ -34,6 +36,7 @@ A package is available from Arch User Repository (AUR). This [package](https://a
 ````
 yay -S pixelserv-tls
 ````
+
 #### Build from source package
 ````
 git clone https://aur.archlinux.org/pixelserv-tls.git
@@ -76,7 +79,7 @@ curl -O https://raw.githubusercontent.com/jumpsmm7/pixelserv-tls_2.3.1-1_armhf.d
 dpkg -i pixelserv-tls_2.3.1-1_armhf.deb
 ````
 and follow the on-screen instructions.
-
+-->
 ## Launch pixelserv-tls
 ````
 pixelserv-tls <listening ip>
