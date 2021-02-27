@@ -1,3 +1,7 @@
+2021-02-24 v2.3.2
+
+* CHANGED modified response to redirect to non HTTPS version of the page.
+
 2019-12-13 v2.3.1
 
 * NEW check and purge expired certs on-the-fly. Generate new ones to replace the expired automatically.
